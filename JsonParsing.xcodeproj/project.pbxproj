@@ -13,6 +13,7 @@
 		3A49FB8622938AE5002A652C /* SpaServicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49FB8522938AE5002A652C /* SpaServicesList.swift */; };
 		3A49FB8822938D2C002A652C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49FB8722938D2C002A652C /* NetworkManager.swift */; };
 		3A49FB8A22939005002A652C /* BreackFastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49FB8922939005002A652C /* BreackFastViewController.swift */; };
+		3A49FB8C229394D2002A652C /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A49FB8B229394D2002A652C /* MapLocationViewController.swift */; };
 		3A4DCA912238C8C8006CE896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DCA902238C8C8006CE896 /* AppDelegate.swift */; };
 		3A4DCA932238C8C8006CE896 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DCA922238C8C8006CE896 /* ViewController.swift */; };
 		3A4DCA962238C8C8006CE896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DCA942238C8C8006CE896 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		3A49FB8522938AE5002A652C /* SpaServicesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaServicesList.swift; sourceTree = "<group>"; };
 		3A49FB8722938D2C002A652C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3A49FB8922939005002A652C /* BreackFastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreackFastViewController.swift; sourceTree = "<group>"; };
+		3A49FB8B229394D2002A652C /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
 		3A4DCA8D2238C8C8006CE896 /* JsonParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4DCA902238C8C8006CE896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A4DCA922238C8C8006CE896 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				3A49FB8022938807002A652C /* SecondViewController.swift */,
 				3A49FB8722938D2C002A652C /* NetworkManager.swift */,
 				3A49FB8922939005002A652C /* BreackFastViewController.swift */,
+				3A49FB8B229394D2002A652C /* MapLocationViewController.swift */,
 				3A49FB8222938A86002A652C /* Model */,
 				3A4DCA942238C8C8006CE896 /* Main.storyboard */,
 				3A4DCA972238C8C8006CE896 /* Assets.xcassets */,
@@ -132,6 +135,7 @@
 				3A4DCA8A2238C8C8006CE896 /* Frameworks */,
 				3A4DCA8B2238C8C8006CE896 /* Resources */,
 				63F7FA17A69AED7D3EA9F5BA /* [CP] Embed Pods Frameworks */,
+				F6A546AF0B039D2C2C0E1759 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +232,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonParsing/Pods-JsonParsing-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F6A546AF0B039D2C2C0E1759 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JsonParsing/Pods-JsonParsing-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JsonParsing/Pods-JsonParsing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -239,6 +261,7 @@
 				3A49FB8122938807002A652C /* SecondViewController.swift in Sources */,
 				3A49FB7F229387D2002A652C /* FirstViewController.swift in Sources */,
 				3A4DCA932238C8C8006CE896 /* ViewController.swift in Sources */,
+				3A49FB8C229394D2002A652C /* MapLocationViewController.swift in Sources */,
 				3A4DCA912238C8C8006CE896 /* AppDelegate.swift in Sources */,
 				3A49FB8622938AE5002A652C /* SpaServicesList.swift in Sources */,
 				3A49FB8A22939005002A652C /* BreackFastViewController.swift in Sources */,

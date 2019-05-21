@@ -6,6 +6,7 @@ target 'JsonParsing' do
   use_frameworks!	
  	pod 'Alamofire' 
   	pod 'SwiftyJSON'
+    pod 'GoogleMaps'
 
   # Pods for JsonParsing
 
