@@ -9,9 +9,19 @@
 import UIKit
 
 class PublicViewController: UIViewController {
+    
+    
+    var toDoListReverse = ["Take out garbage", "Pay bills", "Cross off finished items"]
+    
+    var numbers = [1,2,3,4,5]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        for number in numbers.reversed(){
+            print(number)
+        }
+        
+        toDoListReverse.reversed().forEach {print($0)}
         
         view.backgroundColor =  UIColor.blue
         
